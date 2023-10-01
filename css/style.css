@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    border: none;
+    outline: none;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #3d0c6b;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 0 2rem;
+}
+
+.title h1 {
+    color: #fff;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.container {
+    width: 50rem;
+    height: auto;
+    max-width: 100%;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .select-field,
+.container .textarea-field {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.7rem;
+}
+
+.container .select-field select,
+.container .textarea-field textarea {
+    width: 50%;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    font-size: 1.6rem;
+    font-weight: 500;
+    border: 0.1rem solid rgba(0, 0, 0, 0.1);
+    color: #111;
+    cursor: pointer;
+}
+
+.container .textarea-field textarea {
+    cursor: auto;
+    resize: none;
+    height: 25rem;
+}
+
+.container .textarea-field textarea::placeholder {
+    font-weight: 500;
+}
+
+.container .button-field {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1.5rem;
+}
+
+.container .button-field button {
+    display: inline-block;
+    width: 100%;
+    padding: 1rem;
+    background-color: #3d0c6b;
+    color: #fff;
+    border-radius: 0.5rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    cursor: pointer;
+}
